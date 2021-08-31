@@ -1,21 +1,27 @@
 import React from "react";
 
-export default function InputEmail({ email, onChange }) {
+export default function AuthInut({
+  label,
+  inputType,
+  inputId,
+  inputValue,
+  onChange,
+}) {
   function handldeInput(e) {
     e.preventDefault();
     onChange(e.target.value);
   }
   return (
     <div className="authentication">
-      <label htmlFor="input-email" className="form-label">
-        Email
+      <label htmlFor={inputId} className="form-label">
+        {label}
       </label>
 
       <input
-        type="email"
+        type={inputType}
         className="form-input"
-        id="input-email"
-        value={email}
+        id={inputId}
+        value={inputValue}
         onChange={handldeInput}
         required
       />
