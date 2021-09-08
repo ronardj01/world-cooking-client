@@ -12,7 +12,7 @@ export default function Login() {
   };
   return (
     <div className="login">
-      <h1>Welcome!</h1>
+      <h1>Welcome to Worl Cooking!</h1>
       <form className="form-login" onSubmit={handleSubmit}>
         <AuthInput
           label="Email"
