@@ -9,6 +9,7 @@ export default function Login() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("handleSubmit Working");
+    console.log(process.env.REACT_APP_BACK_URL)
   };
   return (
     <div className="login">
