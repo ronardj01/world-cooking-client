@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* custom class for tailwind */
+.auth {
+    @apply min-h-screen bg-ebony flex items-center justify-center
+}
+.auth-container {
+    @apply bg-sage p-6 w-3/4 rounded-xl ring-8 w-5/6
+}
+
+.auth-h1 {
+    @apply text-blacky text-2xl text-center font-bold mb-12
+}
+
+.auth-btn {
+    @apply text-cream py-3 bg-blacky font-semibold w-full text-xl mt-6
+}

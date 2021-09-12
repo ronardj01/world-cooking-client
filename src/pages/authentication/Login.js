@@ -11,8 +11,9 @@ export default function Login() {
     console.log("handleSubmit Working");
   };
   return (
-    <div className="login">
-      <h1>Welcome to Worl Cooking!</h1>
+    <div className="login auth">
+      <div className="auth-container">
+      <h1 className="auth-h1">Welcome to Worl Cooking!</h1>
       <form className="form-login" onSubmit={handleSubmit}>
         <AuthInput
           label="Email"
@@ -28,10 +29,11 @@ export default function Login() {
           inputValue={password}
           onChange={setPassword}
         />
-        <button type="submit" className="btn">
+        <button type="submit" className="auth-btn">
           Login
         </button>
       </form>
+      </div>
     </div>
   );
 }
