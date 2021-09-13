@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import AuthInput from "../../components/authentication/AuthInput";
+import fetchData from "../../utils/fetchData";
 
 export default function Login() {
   const [email, setEmail] = useState("");
