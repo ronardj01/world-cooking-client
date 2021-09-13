@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import AuthInput from "../../components/authentication/AuthInput";
+import fetchData from "../../utils/fetchData";
 
 export default function Signup() {
   const [email, setEmail] = useState("");
@@ -8,9 +9,13 @@ export default function Signup() {
 
   const [password, setPassword] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("handleSubmit Working");
+    const signupData = {email, password, userName};
+    const url = `${process.env.REACT_APP_BACK_URL}/authentication/register`;
+    console.log(url);
+    const data = await fetchData(signupData, url, "POST");
+    console.log(data);
   };
   return (
     <div className="signup auth">

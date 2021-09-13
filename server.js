@@ -1,10 +1,10 @@
 //server.js
 const express = require('express');
 const path = require('path');
-const port = process.env.PORT || 4000;
+const port = process.env.PORT || 8080;
 const app = express();
 
-// the __dirname is the current directory from where the script is running
+// the __dirname is the current directory from where the script is running (server is necesary for craco run in heroku)
 app.use(express.static(__dirname));
 app.use(express.static(path.join(__dirname, 'build')));
 app.get('/ping', function (req, res) {
