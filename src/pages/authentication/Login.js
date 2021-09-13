@@ -6,9 +6,11 @@ export default function Login() {
 
   const [password, setPassword] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("handleSubmit Working");
+    const signupData = {email, password};
+    const url = `${process.env.REACT_APP_BACK_URL}/authentication/login`;
+    const data = await fetchData(signupData, url, "POST");
   };
   return (
     <div className="login auth">

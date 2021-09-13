@@ -13,9 +13,7 @@ export default function Signup() {
     e.preventDefault();
     const signupData = {email, password, userName};
     const url = `${process.env.REACT_APP_BACK_URL}/authentication/register`;
-    console.log(url);
     const data = await fetchData(signupData, url, "POST");
-    console.log(data);
   };
   return (
     <div className="signup auth">
