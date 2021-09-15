@@ -11,7 +11,7 @@ function App() {
         <TopNavbar />
         <Switch>
           <Route exact path="/">
-            <h1>welcome</h1>
+            <h1 className="text-center font-bold pt-12">welcome</h1>
           </Route>
 
           <Route path="/signup" component={Signup} />
