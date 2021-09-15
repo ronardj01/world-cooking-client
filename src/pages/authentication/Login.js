@@ -16,7 +16,7 @@ export default function Login() {
   return (
     <div className="login auth">
       <div className="auth-container">
-      <h1 className="auth-h1">Welcome to Worl Cooking!</h1>
+      <h1 className="auth-h1">Welcome to World Cooking!</h1>
       <form className="form-login" onSubmit={handleSubmit}>
         <AuthInput
           label="Email"
