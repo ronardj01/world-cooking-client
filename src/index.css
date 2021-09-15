@@ -17,3 +17,7 @@
 .auth-btn {
     @apply text-cream py-3 bg-blacky font-semibold w-full text-xl mt-6
 }
+
+.hover-nav {
+    @apply hover:bg-ebony hover:text-red-300 p-2
+}
