@@ -12,6 +12,7 @@ export default function Login() {
     const signupData = {email, password};
     const url = `${process.env.REACT_APP_BACK_URL}/authentication/login`;
     const data = await fetchData(signupData, url, "POST");
+    console.log(data)
   };
   return (
     <div className="login auth">
