@@ -18,7 +18,7 @@ export const TopNavbar = () => {
           onClick={whenClick}
           className="text-3xl hover-nav md:hidden my-3"><HiOutlineMenu /></button>
         <ul
-          className={`flex flex-col ${isHidden} md:flex-row md:inline-flex`}>
+          className={`flex flex-col ${isHidden} md:flex-row md:inline-flex py-1`}>
           <li className="hover-nav">
             <Link to="/">Home</Link>
           </li>
