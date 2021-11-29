@@ -12,6 +12,7 @@ module.exports = {
       
       fontFamily: {
        'title': ['Kings', 'cursive'],
+       'intro': ["Life Savers", 'cursive'],
       },
     },
   },
