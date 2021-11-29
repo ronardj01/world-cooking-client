@@ -9,6 +9,10 @@ module.exports = {
         ebony: '#344443',
         blacky: '#29292A',
       },
+      
+      fontFamily: {
+       'title': ['Kings', 'cursive'],
+      },
     },
   },
   variants: {
