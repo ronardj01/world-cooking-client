@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { HiOutlineMenu } from 'react-icons/hi';
+import logo from '../../png/Logo2.png';
 
 export const TopNavbar = () => {
   const [isHidden, setIsHidden] = useState("hidden")
@@ -12,6 +13,7 @@ export const TopNavbar = () => {
   return (
     <nav className="bg-blacky">
       {/* add logo */}
+      <img src={logo} alt="logo" className="h-20"/>
 
       <div className="flex flex-col items-center min-h-full font-semibold text-cream justify-end">
         <button
