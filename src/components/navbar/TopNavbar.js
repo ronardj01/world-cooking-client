@@ -11,7 +11,7 @@ export const TopNavbar = () => {
   }
 
   return (
-    <nav className="bg-blacky">
+    <nav className="flex justify-between bg-blacky">
       {/* add logo */}
       <img src={logo} alt="logo" className="h-20"/>
 
@@ -20,7 +20,7 @@ export const TopNavbar = () => {
           onClick={whenClick}
           className="text-3xl hover-nav md:hidden my-3"><HiOutlineMenu /></button>
         <ul
-          className={`flex flex-col ${isHidden} md:flex-row md:inline-flex py-1`}>
+          className={`flex flex-col md:flex-row md:inline-flex py-1 ${isHidden}`}>
           <li className="hover-nav">
             <Link to="/">Home</Link>
           </li>
